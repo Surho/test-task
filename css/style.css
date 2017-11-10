@@ -1,0 +1,412 @@
+@font-face {
+    font-family: "Pragmatica-book";
+    src: url("../fonts/Pragmatica_book.woff2") format("woff2"), url("../fonts/Pragmatica_book.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Pragmatica-bold";
+    src: url("../fonts/Pragmatica_bold.woff2") format("woff2"), url("../fonts/Pragmatica_bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Pragmatica-medium";
+    src: url("../fonts/Pragmatica_medium.woff2") format("woff2"), url("../fonts/Pragmatica_medium.woff") format("woff");
+    font-weight: medium;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Pragmatica-light";
+    src: url("../fonts/Pragmatica_light.woff2") format("woff2"), url("../fonts/Pragmatica_light.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  html,
+  body {
+		margin: 0;
+		padding: 0;
+	}
+
+	header {
+		background: linear-gradient(to right,#f6f6f6 50%,white);
+	}
+
+	header .container {
+		background: linear-gradient(to right,#f6f6f6 840px,white 840px);
+	}
+
+	.page-main {
+		background: linear-gradient(to right,#f6f6f6 50%,white);
+	}
+
+	.page-main .container {
+		background: linear-gradient(to right,#f6f6f6 840px,white 840px);
+	}
+
+  ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+  }
+
+  a {
+		text-decoration: none;
+		color: black;
+  }
+
+  .container {
+		width: 1280px;
+		padding: 0 25px;
+		box-sizing: border-box;
+		margin: 0 auto;
+  }
+
+  .menu {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		padding-top: 18px;
+		margin-bottom: 35px;
+	}
+	
+	.menu__logo {
+		margin-right: 111px;
+	}
+
+  .menu__list {
+		width: 590px;
+		margin-right: 19px;
+		font-size: 0;
+  }
+
+  .menu__list li {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 42px;
+		padding-left: 41px;
+		font-family: "Pragmatica-light";
+		font-size: 14px;
+		line-height: 25px;
+		letter-spacing: 0.05em;
+	}
+
+	.menu__list li:last-child {
+		margin-right: 0;
+	}
+	
+	.menu__list li::after {
+		content:"";
+		position: absolute;
+		width: 22px;
+		height: 20px;
+		left: 0;
+		top: 0;
+	}
+
+	.menu__item--bus::after {
+		background: url("../img/icon-bus.png") no-repeat;
+	}
+
+	.menu__item--conteen::after {
+		background: url("../img/icon-conteen.png") no-repeat;
+	}
+
+	.menu__item--floor::after {
+		background: url("../img/icon-floor.png") no-repeat;
+	}
+
+	.menu__item--territory::after {
+		background: url("../img/icon-territory.png") no-repeat 5px 0px;
+	}
+
+	.menu__item--floor {
+		margin-right: 48px;
+	}
+
+	.menu__list .menu__item--bus {
+		margin-right: 35px;
+	}
+
+	.menu__item--territory {
+		padding-left: 37px;
+	}
+
+  .menu__number {
+		margin-right: 36px;
+		padding: 18px 16px 18px 16px; 
+		border-radius: 50%;
+		background-color: #e3e3e4;
+		font-family: "Pragmatica-bold";
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 29px;
+		text-align: center;
+	}
+	
+	.menu__user-area {
+		display: flex;
+		width: 341px;
+		align-items: center;
+	}
+
+	.menu__search {
+		width: 132px;
+	}
+
+	.menu__search input {
+		width: 120px;
+		padding-left: 37px;
+		box-sizing: border-box;
+		border: none;
+		font-size: 14px;
+		line-height: 16px;
+		background: url("../img/icon-search.png") no-repeat;
+	}
+
+	.menu__search::-moz-placeholder,
+	.menu__search::-webkit-input-placeholder {
+		color: #818285;
+	}
+
+	.menu__mail {
+		display: block;
+		position: relative;
+		margin-right: 46px;
+		width: 23px;
+		height: 16px;
+		font-size: 0;
+		background: url("../img/icon-mail.png")
+	}
+
+	.menu__mail-number {
+		position: absolute;
+		display: block;
+		padding: 3px;
+		top: -50%;
+		left: 70%;
+		font-size: 8px;
+		line-height: 10px;
+		color: #fff;
+		background-color: #ee2d24;
+		border-radius: 4px;
+	}
+
+	.menu__user-profile {
+		box-sizing: border-box;
+		width: 142px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-right: 21px;
+		padding-left: 6px;
+		border-radius: 20px;
+		background-color: #fdda9d;
+		font-size: 0;
+	}
+
+	.menu__user-photo {
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 13px;
+	}
+
+	.menu__user-name {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0;
+		padding: 0;
+		font-family: "Pragmatica-light";
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	.nav {
+		padding-bottom: 35px;
+		font-family: "Pragmatica-medium";
+		font-size: 12px;
+		line-height: 14px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+	}
+
+	.nav__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.nav__item--active a{
+		color: #f04239;	
+	}
+
+	.nav__item--active {
+		padding-bottom: 24px;
+		border-bottom: 2px solid #f04239;
+	}
+
+	.main-content {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 120px;
+	}
+
+	.promo {
+		display: flex;
+		flex-wrap: wrap;
+		width: 720px;
+	}
+
+	.promo__phrase {
+		position: relative;
+		padding: 27px 0;
+		z-index: 0;
+	}
+
+	.promo__phrase::after {
+		content: "";
+		position: absolute;
+		height: 100%;
+		width: 2000px;
+		top: 0;
+		right: 148px;
+		background: #fff;
+		z-index: -1;
+	}
+
+	.promo blockquote {
+		margin: 0;
+	}
+
+	.promo__tv {
+		display: flex;
+		width: 400px;
+		margin-left: 315px;
+	}
+
+	.promo__video-link {
+		position: relative;
+		margin-right: 16px;
+	}
+
+	.promo__video-link img {
+		display: block;
+	}
+
+	.promo__video-link::after {
+		content:"";
+		position: absolute;
+		width: 36px;
+		height: 24px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: url("../img/icon-play.png") no-repeat center center;
+	}
+
+	.promo__description a {
+		display: block;
+	}
+
+	.promo__description-small {
+		margin-bottom: 13px;
+		font-family: "Pragmatica-book";
+		font-size: 14px;
+		line-height: 20px;
+		text-transform: uppercase;
+		color: #818285;
+	}
+
+	.promo__title {
+		width: 240px;
+		font-family: "Pragmatica-bold";
+		font-size: 16px;
+		line-height: 20px;
+		color: #231f20;
+	}
+
+	.promo__author {
+		max-width: 460px;
+		font-family: "Pragmatica-light";
+		font-size: 26px;
+		line-height: 31px;
+		font-style: normal;
+		color: #221f1f;
+	}
+
+	.promo__text {
+		width: 462px;
+		font-family: "Pragmatica-book";
+		font-size: 14px;
+		line-height: 22px;
+		color: #1f1f1f;
+	}
+
+	.promo__position {
+		display: block;
+		width: 220px;
+		font-family: "Pragmatica-light";
+		font-size: 12px;
+		line-height: 14px;
+		color: #7f8085;
+	}
+
+	.user-news {
+		width: 480px;
+		box-sizing: border-box;
+	}
+
+	.user-news__item > * {
+		display: block;
+		padding-left: 62px;
+	}
+
+	.user-news__item time {
+		margin-bottom: 12px;
+		font-family: "Pragmatica-light";
+		font-size: 12px;
+		line-height: 14px;
+		color: #231f20;
+	}
+
+	.user-news small {
+		font-family: "Pragmatica-light";
+		font-size: 12px;
+		line-height: 14px;
+		color: #7f8085;
+	}
+
+	.user-news__text {
+		font-family: "Pragmatica-book";
+		font-size: 13px;
+		line-height: 18px;
+		color: #1f1f1f;
+	}
+
+	.user-news__text--important {
+		color: #ee2d24;
+	}
+
+	.user-news__item {
+		position: relative;
+		margin-bottom: 42px;
+	}
+
+	.user-news__profile {
+		margin-bottom: 55px;
+	}
+
+	.user-news__profile img {
+		position: absolute;
+		left:0;
+		top: -55%;
+	}
+

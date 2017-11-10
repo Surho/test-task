@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<section class="menu">
+				<div class="menu__logo">
+					<a href="#"><img src="img/main-logo.png" width="69" height="20"></a>
+				</div>
+				<a class="menu__number">73</a>
+				<ul class="menu__list">
+					<li class="menu__item menu__item--bus"><a href="#">Автобусы</a>
+					</li>
+					<li class="menu__item menu__item--conteen"><a href="#">Столовая</a>
+					</li>
+					<li class="menu__item menu__item--floor"><a href="#">Этажи</a>
+					</li>
+					<li class="menu__item menu__item--territory"><a href="#">Территории</a></li>
+				</ul>
+				<div class="menu__user-area">
+					<form class="menu__search" action="index.php" method="GET">
+						<input class="menu__search" type="search" placeholder="Поиск">
+					</form>
+					<a class="menu__mail menu__mail--notempty" href="#">Письма<span class="menu__mail-number">12</span></a>
+					<a class="menu__user-profile" href="#">
+						<img class="menu__user-photo" src="img/user.png" width="30" height="30">
+						<p class="menu__user-name">Александр</p>
+					</a>
+				</div>
+			</section>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item nav__item--active"><a href="#">Наша компания</a></li>
+					<li class="nav__item"><a href="#">Наша команда</a></li>
+					<li class="nav__item"><a href="#">Моя безопасность</a></li>
+					<li class="nav__item"><a href="#">Управлющая компания</a></li>
+					<li class="nav__item"><a href="#">Наши предприятия</a></li>
+					<li class="nav__item"><a href="#">Справочники</a></li>
+					<li class="nav__item"><a href="#">Сервисы</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="page-main">
+		<div class="container">
+			<section class="main-content">
+				<div class="promo">
+					<div class="promo__tv">
+						<a class="promo__video-link" href="#"><img href="#" src="img/video-preview.png" width="100" height="100"></a>
+						<div class="promo__description">
+							<a href="#" class="promo__description-small">Евраз ТВ</a>
+							<a href="#" class="promo__title">65-летие Рельсобалочного цеха ЕВРАЗ НТМК</a>
+					  </div>
+					</div>
+					<div class="promo__phrase">
+						<blockquote>
+							<cite class="promo__author">Иванов Алексей</cite>
+							<p class="promo__text">Мы все хотим, чтобы ЕВРАЗ был эффективной компанией 
+								с высоким уровнем безопасности труда, ориентированной на запросы клиентов, 
+								поставляющей продукцию высокого качества…</p>
+							<small class="promo__position">Старший Вице-президент,<br>
+										Блок коммерции и развития бизнеса</small>
+						</blockquote>
+					</div>
+				</div>
+				<div class="user-news">
+					<ul class="user-news__list">
+						<li class="user-news__item user-news__profile">
+							<a href="#"><img src="img/news-profile.png" width="50" height="50"></a>
+							<a href="#" class="user-news__text">Царенко Владимир</a>
+							<small>Главный специалист ЕвразХолдинг</small>
+						</li>
+						<li class="user-news__item user-news__meeting">
+							<time datetime="2017-12-12T00:00">12 декабря</time>
+							<a  class="user-news__text user-news__text--important" href="#">Встреча с придставителями банка ВТБ24</a>
+						</li>
+						<li class="user-news__item user-news__archive">
+							<time datetime="2017-01-13T00:00">13 января</time>
+							<a class="user-news__text" href="#" >О проведении в 2017 году соревнований по горным 
+								лыжам и сноуборду имени Андрея Севенюка</a>
+						</li>
+					</ul>	
+					<div class="news__indicators">
+						<span class="news__indicators-item"></span>
+						<span class="news__indicators-item news__indicators-item--active"></span>
+						<span class="news__indicators-item"></span>
+						<span class="news__indicators-item"></span>
+						<span class="news__indicators-item"></span>
+					</div>
+					<div class="news__controls">
+						<div class="news__next">Дальше</div>
+						<div class="news__previous">Назад</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>   
+</body>
+</html>
