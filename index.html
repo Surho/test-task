@@ -49,15 +49,15 @@
 		</div>
 	</header>
 	<main class="page-main">
-		<div class="container">
-			<section class="main-content">
+		<section class="main-content">
+			<div class="container">
 				<div class="promo">
 					<div class="promo__tv">
 						<a class="promo__video-link" href="#"><img href="#" src="img/video-preview.png" width="100" height="100"></a>
 						<div class="promo__description">
 							<a href="#" class="promo__description-small">Евраз ТВ</a>
 							<a href="#" class="promo__title">65-летие Рельсобалочного цеха ЕВРАЗ НТМК</a>
-					  </div>
+						</div>
 					</div>
 					<div class="promo__phrase">
 						<blockquote>
@@ -69,6 +69,7 @@
 										Блок коммерции и развития бизнеса</small>
 						</blockquote>
 					</div>
+					<button class="promo__hide hide-button">Скрыть промо блок</button>
 				</div>
 				<div class="user-news">
 					<ul class="user-news__list">
@@ -79,7 +80,7 @@
 						</li>
 						<li class="user-news__item user-news__meeting">
 							<time datetime="2017-12-12T00:00">12 декабря</time>
-							<a  class="user-news__text user-news__text--important" href="#">Встреча с придставителями банка ВТБ24</a>
+							<a  class="user-news__text user-news__text--important" href="#">Встреча с придставителями <br>банка ВТБ24</a>
 						</li>
 						<li class="user-news__item user-news__archive">
 							<time datetime="2017-01-13T00:00">13 января</time>
@@ -87,20 +88,114 @@
 								лыжам и сноуборду имени Андрея Севенюка</a>
 						</li>
 					</ul>	
-					<div class="news__indicators">
-						<span class="news__indicators-item"></span>
-						<span class="news__indicators-item news__indicators-item--active"></span>
-						<span class="news__indicators-item"></span>
-						<span class="news__indicators-item"></span>
-						<span class="news__indicators-item"></span>
+					<div class="user-news__indicators">
+						<input type="radio" id="news__switch-1" name="user-news__switch">
+						<label for="news__switch-1" class="user-news__indicators-item"></label>
+						<input type="radio" id="news__switch-2" name="user-news__switch" checked>
+						<label for="news__switch-2" class="user-news__indicators-item user-news__indicators-item--active"></label>
+						<input type="radio" id="news__switch-3" name="user-news__switch">
+						<label for="news__switch-3" class="user-news__indicators-item"></label>
+						<input type="radio" id="news__switch-4" name="user-news__switch">
+						<label for="news__switch-4" class="user-news__indicators-item"></label>
+						<input type="radio" id="news__switch-5" name="user-news__switch">
+						<label for="news__switch-5" class="user-news__indicators-item"></label>
 					</div>
-					<div class="news__controls">
-						<div class="news__next">Дальше</div>
-						<div class="news__previous">Назад</div>
+					<button class="user-news__hide hide-button">Скрыть уведомления пользователя</button>
+				</div>
+			</div>
+		</section>
+		<section class="news">
+			<div class="container">
+				<div class="news__line">
+					<div class="news__item">
+						<a class="news__photo news__photo--south" href="#"><img src="img/news-photo-1.jpg" width="220" height="165" alt="фото новостей 1"></a>
+						<a class="news__text" href="#">ЕВРАЗ передал здание шахты «МУК-96» Междуреченску</a>
+						<time datetime="2017-30-12T00:00">Сегодня</time>
+					</div>
+					<div class="news__item">
+						<a class="news__photo news__photo--south" href=#><img src="img/news-photo-2.jpg" width="220" height="165" alt="фото новостей 2"></a>
+						<a class="news__text" href="#">На теплоэлектроцентрали ЕВРАЗ Южкокса внедрили систему LOTO</a>
+					</div>
+					<div class="news__item">
+						<a class="news__photo news__photo--zsmk" href=#><img src="img/news-photo-3.jpg" width="220" height="165" alt="фото новостей 3"></a>
+						<a class="news__text" href="#">ЕВРАЗ ЗСМК посетили представители ключевого дилера строительного металлопроката</a>
+						<time datetime="2017-12-29T00:00">Вчера</time>
+					</div>
+					<div class="news__item">
+						<a class="news__photo news__photo--ntmk" href=#><img src="img/news-photo-4.jpg" width="220" height="165" alt="фото новостей 4"></a>
+						<a class="news__text" href="#">ЕВРАЗ НТМК повышает эффективность выплавки стали</a>
+						<time datetime="2017-19-12T00:00">19 декабря</time>
 					</div>
 				</div>
+				<div class="news__more">
+					<a class="btn news__all" href="#">Все новости</a>
+					<a class="btn news__my-region" href="#">Мой регион</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<section class="footer__company">
+				<a class="footer__logo" href="#"><img src="img/main-logo.png" width="55" height="16"></a>
+				<p class="footer_quote">Мы ценим своих сотрудников и создаем  
+					возможности для их профессионального развития и карьерного роста</p>
+			</section>
+			<section class="footer__hotline hotline">
+				<p class="hotline__title">Горячая линия</p>
+				<a class="hotline__phone" href="#">8-800-555-88-88</a>
+				<p class="hotline__small">для сотрудников российских предприятий</p>
+				<a "hotline__phone" href="#">0-800-502-118</a>
+				<p class="hotline__small">для сотрудников украинских предприятий</p>
+				<a "hotline__phone" href="#">8-800-080-43-58</a>
+				<p class="hotline__small">для сотрудников ЕВРАЗ Каспиан сталь</p>
+				<a class="hotline__email" href = "mailto: vopros@evraz.com">vopros@evraz.com</a>
+				<a class="btn hotline_contact">Написать в горячую линию</a>
+			</section>
+			<section class="footer__quotation quotation">
+				<div class="quotation__header">
+					<p class="quotation__title">Биржевые котировки</p>
+					<time class="quotation__date" datetime="2017-12-28T12:35">28 декабрая 12:35(GMT)</time>
+				</div>
+				<div class="quotation__position">
+					<div class="quotation__values">
+						<p class="quotation__division"> EVRAZ(LSE):</p>
+						<p class="quotation__price"><span>225.10</span>GBX</p>
+						<p class="quotation__growth">1.20 (0.54%)<span>рост</span></p>
+					</div>
+					<div class="quotation__points">
+						<p class="quotation__points-item">Открытие <span>221,00</span></p>
+						<p class="quotation__points-item">Максимум <span>238,80</span></p>
+						<p class="quotation__points-item">Минимум <span>221,00</span></p>
+					</div>
+				</div>
+				<div class="quotation__position">
+					<div class="quotation__values">
+						<p class="quotation__division">Raspadskaya(MCX):</p>
+						<p class="quotation__price">78,96 <span>RUB</span></p>
+						<p class="quotation__growth">0.65 (0.83%)<span>рост</span></p>
+					</div>
+					<div class="quotation__points">
+						<p class="quotation__points-item">Открытие <span>221,00</span></p>
+						<p class="quotation__points-item">Максимум <span>238,80</span></p>
+						<p class="quotation__points-item">Минимум <span>221,00</span></p>	
+					</div>	
+				</div>			
+			</section>
+			<section class="footer__portal portal">
+				<p class="portal__title">Портал</p>
+				<ul class="portal__list">
+					<li class="portal__item"><a href="#">Обратная связь</a></li>
+					<li class="portal__item"><a href="#">Карта разделов порталов</a></li>
+					<li class="portal__item"><a href="#">Заявка в Service desk</a></li>
+					<li class="portal__item"><a href="#">Помощь</a></li>
+					<li class="portal__item"><a href="#">Команда</a></li>
+				</ul>
+				<small class="additional">Если вы нашли ошибку, выделите ее курсором, 
+					нажмите одновременно клавиши «CTRL» и «ENTER» и мы скорректируем 
+					неточность.</small>		
 			</section>
 		</div>
-	</main>   
+	</footer>   
 </body>
 </html>

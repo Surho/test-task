@@ -1,4 +1,4 @@
-@font-face {
+	@font-face {
     font-family: "Pragmatica-book";
     src: url("../fonts/Pragmatica_book.woff2") format("woff2"), url("../fonts/Pragmatica_book.woff") format("woff");
     font-weight: normal;
@@ -30,6 +30,13 @@
     font-display: swap;
   }
 
+	@font-face {
+    font-family: "Pragmatica-black";
+    src: url("../fonts/Pragmatica_black.woff2") format("woff2"), url("../fonts/Pragmatica_black.woff") format("woff");
+    font-style: normal;
+    font-display: swap;
+	}
+	
   html,
   body {
 		margin: 0;
@@ -37,18 +44,18 @@
 	}
 
 	header {
-		background: linear-gradient(to right,#f6f6f6 50%,white);
+		background: linear-gradient(to right,#f6f6f6 50%,white 50%);
 	}
 
 	header .container {
 		background: linear-gradient(to right,#f6f6f6 840px,white 840px);
 	}
 
-	.page-main {
-		background: linear-gradient(to right,#f6f6f6 50%,white);
+	.main-content {
+		background: linear-gradient(to right,#f6f6f6 50%,white 50%);
 	}
 
-	.page-main .container {
+	.main-content .container{
 		background: linear-gradient(to right,#f6f6f6 840px,white 840px);
 	}
 
@@ -253,16 +260,20 @@
 		border-bottom: 2px solid #f04239;
 	}
 
-	.main-content {
+	.main-content .container {
 		display: flex;
 		justify-content: space-between;
 		padding-bottom: 120px;
 	}
 
 	.promo {
+		position: relative;
 		display: flex;
 		flex-wrap: wrap;
-		width: 720px;
+		align-content: flex-start;
+		width: 815px;
+		box-sizing: border-box;
+		padding-right: 70px;
 	}
 
 	.promo__phrase {
@@ -287,12 +298,16 @@
 	}
 
 	.promo__tv {
-		display: flex;
 		width: 400px;
 		margin-left: 315px;
+		font-size: 0;
 	}
 
 	.promo__video-link {
+		display: inline-block;
+		vertical-align: top;
+		width: 100px;
+		height: 100px;
 		position: relative;
 		margin-right: 16px;
 	}
@@ -310,6 +325,10 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		background: url("../img/icon-play.png") no-repeat center center;
+	}
+	.promo__description {
+		display: inline-block;
+		vertical-align: top;
 	}
 
 	.promo__description a {
@@ -360,7 +379,9 @@
 	}
 
 	.user-news {
-		width: 480px;
+		position: relative;
+		width: 417px;
+		padding-left: 71px;
 		box-sizing: border-box;
 	}
 
@@ -385,6 +406,7 @@
 	}
 
 	.user-news__text {
+		width: 240px;
 		font-family: "Pragmatica-book";
 		font-size: 13px;
 		line-height: 18px;
@@ -410,3 +432,225 @@
 		top: -55%;
 	}
 
+	.user-news__meeting::after,
+	.user-news__archive::after {
+		content: "";
+		position: absolute;
+		top: -10px;
+		left: 10px;;
+		width: 30px;
+		height: 31px;
+	}	
+	
+	.user-news__meeting::after {
+		background: url("../img/icon-important.png") no-repeat center center;
+	}
+
+	.user-news__archive::after {
+		background: url("../img/icon-archive.png") no-repeat center center;
+	}
+
+	.user-news__indicators {
+		font-size: 0;
+		padding: 15px 0;
+		padding-left: 70px;
+	}
+
+	.user-news__indicators input {
+		display: none;
+	}
+
+	.user-news__indicators-item { 
+		display: inline-block;
+		width: 12px;
+		height: 12px;
+		margin-right: 18px;
+		border-radius: 50%;
+		background-color: #e3e3e4;
+		cursor: pointer;
+	}
+
+	.user-news__indicators-item:last-child {
+		margin-right: 0;
+	}
+
+	.user-news__indicators input:checked + label {
+		background-color: #fdda9d;
+	}
+
+	.hide-button {
+		position: relative;
+		width: 15px;
+		height: 25px;
+		font-size: 0;
+		border: none;
+		background: none;
+		cursor: pointer;
+	}
+
+	.hide-button::before,
+	.hide-button::after {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 15px;
+		height: 2px;
+		left: 0px;
+		background: #000000;
+	}
+
+	.hide-button::after {
+		top: 2px;
+		transform: rotate(135deg);
+	}
+
+	.hide-button::before {
+		transform: rotate(45deg);
+	}
+
+	.hide-button.user-news__hide::after {
+		top: 2px;
+		transform: rotate(45deg);
+	}
+
+	.hide-button.user-news__hide::before {
+		transform: rotate(135deg);
+	}
+
+	.promo__hide {
+		position: absolute;
+		right: 25px;
+		bottom: 0px;	
+	}
+
+	.user-news__hide {
+		position: absolute;
+		left: 25px;
+		bottom: 0px;	
+	}
+
+	.news {
+		margin-top: -82px;
+	}
+
+	.news__line {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-bottom: 35px;
+	}
+
+	.news__text {
+		display: block;
+		width: 195px;
+		margin-left: 11px;
+		margin-bottom: 17px;
+		font-family: "Pragmatica-book";
+		font-size: 13px;
+		line-height: 18px;
+	}
+
+	.news time {
+		width: 195px;
+		margin-left: 11px;
+		font-family: "Pragmatica-light";
+		font-size: 12px;
+		line-height: 14px;
+		color: #7f8085;
+	}
+
+	.news__photo,
+	.news__photo img {
+		display: block;
+	}
+
+	.news__photo {
+		position: relative;
+		margin-bottom: 25px;
+	}
+
+	.news__item {
+		width: 220px;
+		margin-right: 20px;
+	}
+
+	.news__item:last-child {
+		margin-right: 0;
+	}
+
+	.news__item time {
+		display: block;
+	}
+
+	.news__photo--south::after,
+	.news__photo--zsmk::after,
+	.news__photo--ntmk::after {
+		content: "";
+		position: absolute;
+		box-sizing: border-box;
+		width: 60px;
+		min-height: 60px;
+		padding-top: 33px;
+		padding-left: 7px;
+		padding-right: 7px;
+		left: 11px;
+		bottom: -11px;
+		font-family: "Pragmatica-black";
+		font-size: 13px;
+		line-height: 19px;
+		color: #ffffff;
+	}
+
+	.news__photo--south::after {
+		content: "ЮГ";
+		background-color: #fcb53b;
+	}
+
+	.news__photo--zsmk::after {
+		content: "ЗСМК";
+		background-color: #ee2d24;
+	}
+
+	.news__photo--ntmk::after {
+		content: "НТМК";
+		background-color: #f57f29;
+	}
+
+	.news__more {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.btn {
+		display: block;
+		padding-top: 16px;
+		padding-bottom: 14px;
+		padding-left: 48px;
+		padding-right: 26px;
+		margin-right: 20px;
+		border-radius: 25px;
+		font-family: "Pragmatica-bold";
+	  font-size: 10px;
+		line-height: 10px;
+		color: #231f20;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		background-color: #fdda9d;
+	}
+
+	a.news__my-region {
+		padding-left: 44px;
+		padding-right: 33px;
+		background: #fdda9d url("../img/icon-region.png") no-repeat 15px center;
+	}
+
+	a.news__all {
+		background: #fdda9d url("../img/icon-news.png") no-repeat 10px center;
+	}
+
+	.news__more a:last-child {
+		margin-right: 0;
+	}
+
+	
