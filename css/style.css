@@ -101,7 +101,7 @@
 		vertical-align: middle;
 		margin-right: 42px;
 		padding-left: 41px;
-		font-family: "Pragmatica-light";
+		font-family: "Pragmatica-light", "Arial", sans-serif;;
 		font-size: 14px;
 		line-height: 25px;
 		letter-spacing: 0.05em;
@@ -153,7 +153,7 @@
 		padding: 18px 16px 18px 16px; 
 		border-radius: 50%;
 		background-color: #e3e3e4;
-		font-family: "Pragmatica-bold";
+		font-family: "Pragmatica-bold", "Arial", sans-serif;;
 		font-weight: bold;
 		font-size: 24px;
 		line-height: 29px;
@@ -231,14 +231,14 @@
 		vertical-align: middle;
 		margin: 0;
 		padding: 0;
-		font-family: "Pragmatica-light";
+		font-family: "Pragmatica-light", "Arial", sans-serif;;
 		font-size: 14px;
 		line-height: 17px;
 	}
 
 	.nav {
 		padding-bottom: 35px;
-		font-family: "Pragmatica-medium";
+		font-family: "Pragmatica-medium", "Arial", sans-serif;;
 		font-size: 12px;
 		line-height: 14px;
 		letter-spacing: 0.05em;
@@ -337,7 +337,7 @@
 
 	.promo__description-small {
 		margin-bottom: 13px;
-		font-family: "Pragmatica-book";
+		font-family: "Pragmatica-book", "Arial", sans-serif;;
 		font-size: 14px;
 		line-height: 20px;
 		text-transform: uppercase;
@@ -346,7 +346,7 @@
 
 	.promo__title {
 		width: 240px;
-		font-family: "Pragmatica-bold";
+		font-family: "Pragmatica-bold", "Arial", sans-serif;;
 		font-size: 16px;
 		line-height: 20px;
 		color: #231f20;
@@ -354,7 +354,7 @@
 
 	.promo__author {
 		max-width: 460px;
-		font-family: "Pragmatica-light";
+		font-family: "Pragmatica-light", "Arial", sans-serif;;
 		font-size: 26px;
 		line-height: 31px;
 		font-style: normal;
@@ -363,7 +363,7 @@
 
 	.promo__text {
 		width: 462px;
-		font-family: "Pragmatica-book";
+		font-family: "Pragmatica-book", "Arial", sans-serif;;
 		font-size: 14px;
 		line-height: 22px;
 		color: #1f1f1f;
@@ -372,7 +372,7 @@
 	.promo__position {
 		display: block;
 		width: 220px;
-		font-family: "Pragmatica-light";
+		font-family: "Pragmatica-light", "Arial", sans-serif;;
 		font-size: 12px;
 		line-height: 14px;
 		color: #7f8085;
@@ -392,14 +392,14 @@
 
 	.user-news__item time {
 		margin-bottom: 12px;
-		font-family: "Pragmatica-light";
+		font-family: "Pragmatica-light", "Arial", sans-serif;;
 		font-size: 12px;
 		line-height: 14px;
 		color: #231f20;
 	}
 
 	.user-news small {
-		font-family: "Pragmatica-light";
+		font-family: "Pragmatica-light", "Arial", sans-serif;;
 		font-size: 12px;
 		line-height: 14px;
 		color: #7f8085;
@@ -407,7 +407,7 @@
 
 	.user-news__text {
 		width: 240px;
-		font-family: "Pragmatica-book";
+		font-family: "Pragmatica-book", "Arial", sans-serif;;
 		font-size: 13px;
 		line-height: 18px;
 		color: #1f1f1f;
@@ -531,6 +531,7 @@
 
 	.news {
 		margin-top: -82px;
+		margin-bottom: 60px;
 	}
 
 	.news__line {
@@ -545,7 +546,7 @@
 		width: 195px;
 		margin-left: 11px;
 		margin-bottom: 17px;
-		font-family: "Pragmatica-book";
+		font-family: "Pragmatica-book", "Arial", sans-serif;;
 		font-size: 13px;
 		line-height: 18px;
 	}
@@ -553,7 +554,7 @@
 	.news time {
 		width: 195px;
 		margin-left: 11px;
-		font-family: "Pragmatica-light";
+		font-family: "Pragmatica-light", "Arial", sans-serif;;
 		font-size: 12px;
 		line-height: 14px;
 		color: #7f8085;
@@ -595,7 +596,7 @@
 		padding-right: 7px;
 		left: 11px;
 		bottom: -11px;
-		font-family: "Pragmatica-black";
+		font-family: "Pragmatica-black", "Arial", sans-serif;;
 		font-size: 13px;
 		line-height: 19px;
 		color: #ffffff;
@@ -630,7 +631,7 @@
 		padding-right: 26px;
 		margin-right: 20px;
 		border-radius: 25px;
-		font-family: "Pragmatica-bold";
+		font-family: "Pragmatica-bold", "Arial", sans-serif;;
 	  font-size: 10px;
 		line-height: 10px;
 		color: #231f20;
@@ -653,4 +654,146 @@
 		margin-right: 0;
 	}
 
+	.footer__wrapper {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 58px;
+		padding-bottom: 42px;
+		border-top: 1px solid #e3e3e4;
+	}
+
+	.quotation__position {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 17px;
+		padding-bottom: 17px;
+		border-top: 1px solid #e3e3e4;
+	}
+
+	.quotation__position p {
+		font-family: "Pragmatica-light", "Arial", sans-serif;;
+		margin: 0;
+		font-size: 12px;
+		line-height: 17px;
+		color: #211f1f;
+	}
+
+	.quotation__position span {
+		font-family: "Pragmatica-bold", "Arial", sans-serif;;
+	}
+
+	.quotation__position:last-child {
+		border-bottom: 1px solid #e3e3e4;
+	}
+
+	.footer__wrapper > * {
+		width: 285px;
+	}
+
+	.footer_quote {
+		margin-top: 36px;
+		font-family: "Pragmatica-light", "Arial", sans-serif;;
+		font-size: 12px;
+		line-height: 19px;
+		color: #7f8085;
+	}
+
+	.hotline__title,
+	.quotation__title,
+	.portal__title {
+		margin: 0;
+		font-family: "Pragmatica-bold", "Arial", sans-serif;;
+		font-size: 14px;
+		line-height: 14px;
+	}
+
+	.hotline__title {
+		margin-bottom: 17px;
+		color: #ee2d24;
+	}
+
+	.quotation__title {
+		margin-bottom: 20px;
+	}
+
+	.portal__title {
+		margin-bottom: 20px;
+	}
+
+	.hotline__phone {
+		display: block;
+		font-family: "Pragmatica-bold", "Arial", sans-serif;;
+		font-size: 12px;
+		line-height: 14px;
+		color: #211f1f;
+	}
+
+	.hotline__small {
+		margin-top: 8px;
+		margin-bottom: 16px;
+		font-family: "Pragmatica-book", "Arial", sans-serif;;
+		font-size: 12px;
+		line-height: 14px;
+		color: #818285;
+	}
+
+	.hotline__email {
+		display: block;
+		margin-bottom: 25px;
+		font-family: "Pragmatica-bold", "Arial", sans-serif;;
+		font-size: 12px;
+		line-height: 14px;
+		color: #ee2d24;
+	}
+
+	.hotline__contact {
+		display: inline-block;
+		vertical-align: top;
+		padding-left: 21px;
+		padding-right: 21px;
+	}
+
+	.quotation time {
+		display: block;
+		margin-bottom: 17px;
+		font-family: "Pragmatica-light", "Arial", sans-serif;;
+		font-size: 12px;
+		line-height: 14px;
+		color: #7f7f85;
+	}
+
+	p.quotation__growth {
+		color: #46ba01;
+	}
+
+	.quotation__growth--arrow-up {
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 5px;
+		font-size: 0;
+		height: 4px;
+		border: 5px solid #46ba01;
+		border-bottom-width: 8px;
+		border-left-color: transparent;
+		border-right-color: transparent;
+		border-top-width: 0;
+	}
+
+	.quotation__points p {
+		color: #7f8085;
+	}
+
+	.portal__list {
+		font-family: "Pragmatica-light", "Arial", sans-serif;;
+		margin-bottom: 35px;
+		font-size: 14px;
+		line-height: 25px;
+	}
+
+	.additional {
+		font-family: "Pragmatica-light", "Arial", sans-serif;;
+		font-size: 12px;
+		line-height: 19px;
+		color: #808185;
+	}
 	
