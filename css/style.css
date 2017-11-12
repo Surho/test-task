@@ -5,7 +5,7 @@
     font-style: normal;
     font-display: swap;
   }
-  
+
   @font-face {
     font-family: "Pragmatica-bold";
     src: url("../fonts/Pragmatica_bold.woff2") format("woff2"), url("../fonts/Pragmatica_bold.woff") format("woff");
@@ -36,7 +36,7 @@
     font-style: normal;
     font-display: swap;
 	}
-	
+
   html,
   body {
 		margin: 0;
@@ -81,10 +81,10 @@
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
-		padding-top: 18px;
-		margin-bottom: 35px;
+		padding-top: 21px;
+		margin-bottom: 38px;
 	}
-	
+
 	.menu__logo {
 		margin-right: 111px;
 	}
@@ -100,32 +100,35 @@
 		display: inline-block;
 		vertical-align: middle;
 		margin-right: 42px;
-		padding-left: 41px;
 		font-family: "Pragmatica-light", "Arial", sans-serif;;
 		font-size: 14px;
 		line-height: 25px;
 		letter-spacing: 0.05em;
-	}
+  }
+
+  .menu__list a {
+    padding-left: 41px;
+  }
 
 	.menu__list li:last-child {
 		margin-right: 0;
 	}
-	
+
 	.menu__list li::after {
 		content:"";
 		position: absolute;
-		width: 22px;
-		height: 20px;
+		width: 26px;
+		height: 22px;
 		left: 0;
 		top: 0;
-	}
+  }
 
 	.menu__item--bus::after {
 		background: url("../img/icon-bus.png") no-repeat;
 	}
 
 	.menu__item--conteen::after {
-		background: url("../img/icon-conteen.png") no-repeat;
+		background: url("../img/icon-conteen.png") no-repeat 5px 2px;
 	}
 
 	.menu__item--floor::after {
@@ -133,7 +136,7 @@
 	}
 
 	.menu__item--territory::after {
-		background: url("../img/icon-territory.png") no-repeat 5px 0px;
+    background: url("../img/icon-territory.png") no-repeat 8px 2px;
 	}
 
 	.menu__item--floor {
@@ -144,13 +147,16 @@
 		margin-right: 35px;
 	}
 
-	.menu__item--territory {
-		padding-left: 37px;
+	.menu__item--territory a {
+    padding-left: 45px;
 	}
 
   .menu__number {
-		margin-right: 36px;
-		padding: 18px 16px 18px 16px; 
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    padding-top: 18px;
+		margin-right: 38px;
 		border-radius: 50%;
 		background-color: #e3e3e4;
 		font-family: "Pragmatica-bold", "Arial", sans-serif;;
@@ -159,7 +165,7 @@
 		line-height: 29px;
 		text-align: center;
 	}
-	
+
 	.menu__user-area {
 		display: flex;
 		width: 341px;
@@ -167,8 +173,12 @@
 	}
 
 	.menu__search {
-		width: 132px;
-	}
+    width: 132px;
+  }
+
+  .menu__search:focus {
+    outline: none;
+  }
 
 	.menu__search input {
 		width: 120px;
@@ -188,11 +198,11 @@
 	.menu__mail {
 		display: block;
 		position: relative;
-		margin-right: 46px;
-		width: 23px;
+		margin-right: 45px;
+		width: 24px;
 		height: 16px;
 		font-size: 0;
-		background: url("../img/icon-mail.png")
+		background: url("../img/icon-mail.png") no-repeat;
 	}
 
 	.menu__mail-number {
@@ -237,7 +247,7 @@
 	}
 
 	.nav {
-		padding-bottom: 35px;
+		padding-bottom: 40px;
 		font-family: "Pragmatica-medium", "Arial", sans-serif;;
 		font-size: 12px;
 		line-height: 14px;
@@ -252,7 +262,7 @@
 	}
 
 	.nav__item--active a{
-		color: #f04239;	
+		color: #f04239;
 	}
 
 	.nav__item--active {
@@ -288,7 +298,7 @@
 		height: 100%;
 		width: 2000px;
 		top: 0;
-		right: 148px;
+		right: 167px;
 		background: #fff;
 		z-index: -1;
 	}
@@ -336,7 +346,8 @@
 	}
 
 	.promo__description-small {
-		margin-bottom: 13px;
+    margin-top: 17px;
+		margin-bottom: 9px;
 		font-family: "Pragmatica-book", "Arial", sans-serif;;
 		font-size: 14px;
 		line-height: 20px;
@@ -362,7 +373,9 @@
 	}
 
 	.promo__text {
-		width: 462px;
+    width: 482px;
+    margin-top: 27px;
+    margin-bottom: 22px;
 		font-family: "Pragmatica-book", "Arial", sans-serif;;
 		font-size: 14px;
 		line-height: 22px;
@@ -387,11 +400,11 @@
 
 	.user-news__item > * {
 		display: block;
-		padding-left: 62px;
+		padding-left: 67px;
 	}
 
 	.user-news__item time {
-		margin-bottom: 12px;
+		margin-bottom: 8px;
 		font-family: "Pragmatica-light", "Arial", sans-serif;;
 		font-size: 12px;
 		line-height: 14px;
@@ -406,12 +419,17 @@
 	}
 
 	.user-news__text {
-		width: 240px;
+    width: 240px;
 		font-family: "Pragmatica-book", "Arial", sans-serif;;
 		font-size: 13px;
 		line-height: 18px;
 		color: #1f1f1f;
-	}
+  }
+
+  .user-news__profile-name {
+    margin-top: 12px;
+    margin-bottom: 5px;
+  }
 
 	.user-news__text--important {
 		color: #ee2d24;
@@ -419,17 +437,17 @@
 
 	.user-news__item {
 		position: relative;
-		margin-bottom: 42px;
+		margin-bottom: 40px;
 	}
 
 	.user-news__profile {
-		margin-bottom: 55px;
+		margin-bottom: 52px;
 	}
 
 	.user-news__profile img {
 		position: absolute;
 		left:0;
-		top: -55%;
+		top: -50%;
 	}
 
 	.user-news__meeting::after,
@@ -440,8 +458,13 @@
 		left: 10px;;
 		width: 30px;
 		height: 31px;
-	}	
-	
+  }
+
+  .user-news__archive::after {
+    top: -8px;
+    left: 8px;
+  }
+
 	.user-news__meeting::after {
 		background: url("../img/icon-important.png") no-repeat center center;
 	}
@@ -452,7 +475,6 @@
 
 	.user-news__indicators {
 		font-size: 0;
-		padding: 15px 0;
 		padding-left: 70px;
 	}
 
@@ -460,11 +482,11 @@
 		display: none;
 	}
 
-	.user-news__indicators-item { 
+	.user-news__indicators-item {
 		display: inline-block;
-		width: 12px;
-		height: 12px;
-		margin-right: 18px;
+		width: 13px;
+		height: 13px;
+		margin-right: 16px;
 		border-radius: 50%;
 		background-color: #e3e3e4;
 		cursor: pointer;
@@ -496,7 +518,7 @@
 		width: 15px;
 		height: 2px;
 		left: 0px;
-		background: #000000;
+    background: #000000;
 	}
 
 	.hide-button::after {
@@ -519,18 +541,18 @@
 
 	.promo__hide {
 		position: absolute;
-		right: 25px;
-		bottom: 0px;	
+		right: 28px;
+		bottom: -8px;
 	}
 
 	.user-news__hide {
 		position: absolute;
-		left: 25px;
-		bottom: 0px;	
+		left: 28px;
+		bottom: -8px;
 	}
 
 	.news {
-		margin-top: -82px;
+		margin-top: -56px;
 		margin-bottom: 60px;
 	}
 
@@ -538,14 +560,14 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		margin-bottom: 35px;
+		margin-bottom: 39px;
 	}
 
 	.news__text {
 		display: block;
 		width: 195px;
 		margin-left: 11px;
-		margin-bottom: 17px;
+		margin-bottom: 13px;
 		font-family: "Pragmatica-book", "Arial", sans-serif;;
 		font-size: 13px;
 		line-height: 18px;
@@ -567,7 +589,7 @@
 
 	.news__photo {
 		position: relative;
-		margin-bottom: 25px;
+		margin-bottom: 23px;
 	}
 
 	.news__item {
@@ -796,4 +818,3 @@
 		line-height: 19px;
 		color: #808185;
 	}
-	
