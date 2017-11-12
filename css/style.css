@@ -687,8 +687,8 @@
 	.quotation__position {
 		display: flex;
 		justify-content: space-between;
-		padding-top: 17px;
-		padding-bottom: 17px;
+		padding-top: 12px;
+		padding-bottom: 10px;
 		border-top: 1px solid #e3e3e4;
 	}
 
@@ -702,7 +702,19 @@
 
 	.quotation__position span {
 		font-family: "Pragmatica-bold", "Arial", sans-serif;;
-	}
+  }
+
+  .quotation__price {
+    width: 90px;
+  }
+
+  .quotation__points {
+    width: 137px;
+  }
+
+  p.quotation__points-item {
+    margin-bottom: 0px;
+  }
 
 	.quotation__position:last-child {
 		border-bottom: 1px solid #e3e3e4;
@@ -712,8 +724,8 @@
 		width: 285px;
 	}
 
-	.footer_quote {
-		margin-top: 36px;
+	.footer__quote {
+		margin-top: 26px;
 		font-family: "Pragmatica-light", "Arial", sans-serif;;
 		font-size: 12px;
 		line-height: 19px;
@@ -730,20 +742,21 @@
 	}
 
 	.hotline__title {
-		margin-bottom: 17px;
+		margin-bottom: 13px;
 		color: #ee2d24;
 	}
 
 	.quotation__title {
-		margin-bottom: 20px;
+		margin-bottom: 17px;
 	}
 
 	.portal__title {
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 	}
 
 	.hotline__phone {
-		display: block;
+    display: block;
+    padding-left: 3px;
 		font-family: "Pragmatica-bold", "Arial", sans-serif;;
 		font-size: 12px;
 		line-height: 14px;
@@ -751,8 +764,9 @@
 	}
 
 	.hotline__small {
-		margin-top: 8px;
-		margin-bottom: 16px;
+    padding-left: 3px;
+    margin-top: 4px;
+		margin-bottom: 13px;
 		font-family: "Pragmatica-book", "Arial", sans-serif;;
 		font-size: 12px;
 		line-height: 14px;
@@ -760,7 +774,8 @@
 	}
 
 	.hotline__email {
-		display: block;
+    display: block;
+    padding-left: 3px;
 		margin-bottom: 25px;
 		font-family: "Pragmatica-bold", "Arial", sans-serif;;
 		font-size: 12px;
@@ -806,14 +821,14 @@
 	}
 
 	.portal__list {
-		font-family: "Pragmatica-light", "Arial", sans-serif;;
-		margin-bottom: 35px;
+    font-family: "Pragmatica-light", "Arial", sans-serif;
+		margin-bottom: 26px;
 		font-size: 14px;
 		line-height: 25px;
 	}
 
 	.additional {
-		font-family: "Pragmatica-light", "Arial", sans-serif;;
+    font-family: "Pragmatica-light", "Arial", sans-serif;
 		font-size: 12px;
 		line-height: 19px;
 		color: #808185;
